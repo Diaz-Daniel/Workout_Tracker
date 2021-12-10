@@ -15,8 +15,11 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useFindAndModify: false,
 });
 
-// routes
+// routes for completing CRUD
 app.use(require("./routes/api.js"));
+//responsible for serving the html files
+//exercise.js and stats.js
+app.use(require("./routes/view.js"));
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
