@@ -1,4 +1,4 @@
-# Fitness_Tracker
+# Workout_Tracker
 
 ## Goal of the Project
 
